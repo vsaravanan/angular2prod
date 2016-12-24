@@ -1,6 +1,6 @@
-webpackJsonp([0,4],{
+webpackJsonp([0,3],{
 
-/***/ 341:
+/***/ 339:
 /***/ function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,21 +9,21 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 341;
+webpackEmptyContext.id = 339;
 
 
 /***/ },
 
-/***/ 342:
+/***/ 340:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(457);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(451);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__polyfills_ts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(427);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(456);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_module__ = __webpack_require__(454);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(450);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_module__ = __webpack_require__(448);
 
 
 
@@ -37,7 +37,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 /***/ },
 
-/***/ 453:
+/***/ 447:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -71,16 +71,16 @@ var AppComponent = (function () {
 
 /***/ },
 
-/***/ 454:
+/***/ 448:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(190);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(275);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(429);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(453);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reactive_reactive_component__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(274);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(423);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(447);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__reactive_reactive_component__ = __webpack_require__(449);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -122,12 +122,12 @@ var AppModule = (function () {
 
 /***/ },
 
-/***/ 455:
+/***/ 449:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(275);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(274);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ReactiveFormComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -143,8 +143,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var ReactiveFormComponent = (function () {
     function ReactiveFormComponent(fb) {
         this.fb = fb;
-        // nameError: string;
-        // usernameError: string;
         this.formErrors = {
             name: '',
             username: '',
@@ -177,10 +175,11 @@ var ReactiveFormComponent = (function () {
     ReactiveFormComponent.prototype.ngOnInit = function () {
         this.buildForm();
     };
+    //    template driven method
     //  	this.form = new FormGroup ({
     //  		name: new FormControl(''),
     //  		username: new FormControl('')
-    //		});
+    // 		});
     ReactiveFormComponent.prototype.buildForm = function () {
         var _this = this;
         this.form = this.fb.group({
@@ -203,6 +202,7 @@ var ReactiveFormComponent = (function () {
             }
         }
         this.validateAddresses();
+        //    template driven method
         // this.nameError = '';
         // this.usernameError = '';
         // let name = this.form.get('name');
@@ -259,8 +259,8 @@ var ReactiveFormComponent = (function () {
     ReactiveFormComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'reactive-form',
-            styles: [__webpack_require__(609)],
-            template: __webpack_require__(613),
+            styles: [__webpack_require__(604)],
+            template: __webpack_require__(605),
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]) === 'function' && _a) || Object])
     ], ReactiveFormComponent);
@@ -271,7 +271,7 @@ var ReactiveFormComponent = (function () {
 
 /***/ },
 
-/***/ 456:
+/***/ 450:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -287,41 +287,41 @@ var environment = {
 
 /***/ },
 
-/***/ 457:
+/***/ 451:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(471);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(465);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(464);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(458);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(460);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(454);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(466);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(460);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(465);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(459);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(463);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(457);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(462);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(456);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(470);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(464);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(459);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(453);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(458);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(452);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(468);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(462);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(461);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(455);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(469);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(463);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(467);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(461);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(472);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(466);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(625);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(617);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__);
 
 
@@ -343,27 +343,27 @@ var environment = {
 
 /***/ },
 
-/***/ 609:
+/***/ 604:
 /***/ function(module, exports) {
 
 module.exports = " .screen50  {\r\n\t\r\n\tmax-width: 500px;\r\n\tpadding-left: 5%;\r\n}\r\n\r\n.text-right {\r\n\ttext-align: right;\r\n}\r\n\r\n/* width: 40%; .smalltextbox, .smalldiv, */"
 
 /***/ },
 
-/***/ 613:
+/***/ 605:
 /***/ function(module, exports) {
 
-module.exports = "<form (ngSubmit) = \"processForm()\" [formGroup]=\"form\"  >\n\t\n\t<!-- .form-group>label+input.form-control[name=name] \n\t\t.form-group>label+input[name=userName]\n\t\t.form-group>button[type=submit].btn.btn-danger\n\t\t.form-group>.ii>.panel>.panel-heading>.panel-body>.form-group>.form-group\n\t-->\n\t<div class=\"screen50\">\n\n\t\t<div class=\"form-group\">\n\t\t\t<label for=\"name\"></label>\n\t\t\t<input type=\"text\" class=\"form-control smalltextbox\" name=\"name\" required\n\t\t\t\tformControlName=\"name\" >\n\n\t\t\t<span clas=\"help-block\" *ngIf=\"formErrors.name\">\n\t\t\t\t{{formErrors.name}}\n\t\t\t</span>\n\t\t</div>\n\n\t\t<div class=\"form-group\">\n\t\t\t<label for=\"userName\"></label>\n\t\t\t<input type=\"text\" class=\"form-control smalltextbox\" name=\"userName\" required\n\t\t\t\tformControlName=\"username\">\t   \n\n\t\t\t<span clas=\"help-block\" *ngIf=\"formErrors.username\">\n\t\t\t\t{{formErrors.username}}\n\t\t\t</span>\n\n\t\t</div>\n\n\n\t\t<div class=\"form-group smalldiv\" formArrayName=\"addresses\" >\n\t\t\t<div *ngFor=\"let address of form.controls.addresses.controls;let i=index; \">\n\t\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t\tAddress #{{ i + 1}}\n\n\t\t\t\t\t\t<span *ngIf=\"form.controls.addresses.controls.length > 1\" \n\t\t\t\t\t\t\t\t(click)=\"removeAddress(i)\">\n\t\t\t\t\t\t\tRemove\n\t\t\t\t\t\t</span>\n\n\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body\" [formGroupName]=\"i\" >\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"city\"></label>\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" formControlName=\"city\" required>\n\n\t\t\t\t\t\t\t<span clas=\"help-block\" *ngIf=\"formErrors.addresses[i].city\">\n\t\t\t\t\t\t\t\t{{ formErrors.addresses[i].city }}\n\t\t\t\t\t\t\t</span>\t                    \n\t<!-- \t\t\t\t\t    \t*ngIf=\n\t\t\t\t\t\t\t\t\t\"form.controls.addresses.controls[i].controls.city.errors && \n\t\t\t\t\t\t\t\t\tform.controls.addresses.controls[i].controls.city.dirty \">\n\t\t\t\t\t\t\t\tcity is required -->\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"country\"></label>\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" formControlName=\"country\" required>\n\n\t\t\t\t\t\t\t<span clas=\"help-block\" *ngIf=\"formErrors.addresses[i].country\">\n\t\t\t\t\t\t\t\t{{ formErrors.addresses[i].country }}\n\t\t\t\t\t\t\t</span>\t \n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"text-right\">\n\t\t\t<a (click)=\"addAddress()\" class=\"btn btn-info\">Add Address</a>\n\t\t</div>\n\n\n\t\t<div class=\"form-group\">\n\t\t\t<button type=\"submit\" class=\"btn btn-danger\">Submit</button>\n\t\t</div>\n\n\n\t</div>\n\n\n</form>"
+module.exports = "<form (ngSubmit) = \"processForm()\" [formGroup]=\"form\"  >\n\t\n\t<!-- .form-group>label+input.form-control[name=name] \n\t\t.form-group>label+input[name=userName]\n\t\t.form-group>button[type=submit].btn.btn-danger\n\t\t.form-group>.ii>.panel>.panel-heading>.panel-body>.form-group>.form-group\n\t-->\n\t<div class=\"screen50\">\n\n\t\t<div class=\"form-group\">\n\t\t\t<label for=\"name\">Name</label>\n\t\t\t<input type=\"text\" class=\"form-control smalltextbox\" name=\"name\" required\n\t\t\t\tformControlName=\"name\" >\n\n\t\t\t<span clas=\"help-block\" *ngIf=\"formErrors.name\">\n\t\t\t\t{{formErrors.name}}\n\t\t\t</span>\n\t\t</div>\n\n\t\t<div class=\"form-group\">\n\t\t\t<label for=\"userName\">User name</label>\n\t\t\t<input type=\"text\" class=\"form-control smalltextbox\" name=\"userName\" required\n\t\t\t\tformControlName=\"username\">\t   \n\n\t\t\t<span clas=\"help-block\" *ngIf=\"formErrors.username\">\n\t\t\t\t{{formErrors.username}}\n\t\t\t</span>\n\n\t\t</div>\n\n\n\t\t<div class=\"form-group smalldiv\" formArrayName=\"addresses\" >\n\t\t\t<div *ngFor=\"let address of form.controls.addresses.controls;let i=index; \">\n\t\t\t\t<div class=\"panel panel-primary\">\n\t\t\t\t\t<div class=\"panel-heading\">\n\t\t\t\t\t\tAddress #{{ i + 1}}\n\n\t\t\t\t\t\t<span *ngIf=\"form.controls.addresses.controls.length > 1\" \n\t\t\t\t\t\t\t\t(click)=\"removeAddress(i)\">\n\t\t\t\t\t\t\tRemove\n\t\t\t\t\t\t</span>\n\n\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"panel-body\" [formGroupName]=\"i\" >\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"city\">City</label>\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" formControlName=\"city\" required>\n\n\t\t\t\t\t\t\t<span clas=\"help-block\" *ngIf=\"formErrors.addresses[i].city\">\n\t\t\t\t\t\t\t\t{{ formErrors.addresses[i].city }}\n\t\t\t\t\t\t\t</span>\t                    \n\t<!-- \t\t\t\t\t    \t*ngIf=\n\t\t\t\t\t\t\t\t\t\"form.controls.addresses.controls[i].controls.city.errors && \n\t\t\t\t\t\t\t\t\tform.controls.addresses.controls[i].controls.city.dirty \">\n\t\t\t\t\t\t\t\tcity is required -->\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t\t<label for=\"country\">Country</label>\n\t\t\t\t\t\t\t<input type=\"text\" class=\"form-control\" formControlName=\"country\" required>\n\n\t\t\t\t\t\t\t<span clas=\"help-block\" *ngIf=\"formErrors.addresses[i].country\">\n\t\t\t\t\t\t\t\t{{ formErrors.addresses[i].country }}\n\t\t\t\t\t\t\t</span>\t \n\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\n\t\t<div class=\"text-right\">\n\t\t\t<a (click)=\"addAddress()\" class=\"btn btn-info\">Add Address</a>\n\t\t</div>\n\n\n\t\t<div class=\"form-group\">\n\t\t\t<button type=\"submit\" class=\"btn btn-danger\">Submit</button>\n\t\t</div>\n\n\n\t</div>\n\n\n</form>"
 
 /***/ },
 
-/***/ 626:
+/***/ 618:
 /***/ function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(342);
+module.exports = __webpack_require__(340);
 
 
 /***/ }
 
-},[626]);
+},[618]);
 //# sourceMappingURL=main.bundle.map
